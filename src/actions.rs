@@ -37,6 +37,7 @@ pub enum Action {
     SplitHorizontal,
     SplitVertical,
     DetectWindow,
+    Reset,
     Quit,
 }
 
@@ -78,6 +79,7 @@ impl Action {
             "split_horizontal" => Some(Self::SplitHorizontal),
             "split_vertical" => Some(Self::SplitVertical),
             "detect_window" => Some(Self::DetectWindow),
+            "reset" => Some(Self::Reset),
             "quit" => Some(Self::Quit),
             _ => None,
         }

@@ -7,6 +7,18 @@ pub struct Win32WindowApi;
 
 impl Win32WindowApi {
     pub fn new() -> Result<Self, AppError> {
+        unsafe {
+            let _ = ChangeWindowMessageFilter(WM_SHOWWINDOW, MSGFLT_ADD);
+            let _ = ChangeWindowMessageFilter(WM_SYSCOMMAND, MSGFLT_ADD);
+            let _ = ChangeWindowMessageFilter(WM_WINDOWPOSCHANGING, MSGFLT_ADD);
+            let _ = ChangeWindowMessageFilter(WM_WINDOWPOSCHANGED, MSGFLT_ADD);
+            let _ = ChangeWindowMessageFilter(WM_MOVE, MSGFLT_ADD);
+            let _ = ChangeWindowMessageFilter(WM_SIZE, MSGFLT_ADD);
+            let _ = ChangeWindowMessageFilter(WM_ACTIVATE, MSGFLT_ADD);
+            let _ = ChangeWindowMessageFilter(WM_NCACTIVATE, MSGFLT_ADD);
+            let _ = ChangeWindowMessageFilter(WM_SETFOCUS, MSGFLT_ADD);
+            let _ = ChangeWindowMessageFilter(WM_KILLFOCUS, MSGFLT_ADD);
+        }
         Ok(Self)
     }
 

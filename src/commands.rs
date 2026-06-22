@@ -226,6 +226,16 @@ impl CommandExecutor {
                 Ok(())
             }
 
+            Action::Reset => {
+                tracing::info!("--- reset triggered ---");
+                let mut ws = self.ws()?;
+                ws.reset()?;
+                let area = self.get_work_area()?;
+                ws.apply_current_layout(area, 8)?;
+                tracing::info!("--- reset complete ---");
+                Ok(())
+            }
+
             Action::Quit => {
                 tracing::info!("quit action received");
                 Err(AppError::General("quit requested".to_string()))
