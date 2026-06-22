@@ -1,0 +1,56 @@
+[layout]
+gap = 8
+margin = 0
+
+[terminal]
+command = "wt.exe"
+
+[ignore]
+classes = [
+    "Shell_TrayWnd",
+    "Progman",
+    "Windows.UI.Core.CoreWindow",
+    "ApplicationFrameWindow",
+]
+
+titles = [
+    "Program Manager",
+    "",
+]
+
+[hotkeys]
+move_left = "CTRL+ALT+SHIFT+H"
+move_down = "CTRL+ALT+SHIFT+J"
+move_up = "CTRL+ALT+SHIFT+K"
+move_right = "CTRL+ALT+SHIFT+L"
+
+focus_left = "CTRL+ALT+SHIFT+LEFT"
+focus_down = "CTRL+ALT+SHIFT+DOWN"
+focus_up = "CTRL+ALT+SHIFT+UP"
+focus_right = "CTRL+ALT+SHIFT+RIGHT"
+
+fullscreen = "CTRL+ALT+SHIFT+F"
+center = "CTRL+ALT+SHIFT+SPACE"
+launch_terminal = "CTRL+ALT+SHIFT+ENTER"
+
+next_workspace = "CTRL+ALT+SHIFT+N"
+previous_workspace = "CTRL+ALT+SHIFT+P"
+
+workspace_1 = "CTRL+ALT+SHIFT+1"
+workspace_2 = "CTRL+ALT+SHIFT+2"
+workspace_3 = "CTRL+ALT+SHIFT+3"
+workspace_4 = "CTRL+ALT+SHIFT+4"
+workspace_5 = "CTRL+ALT+SHIFT+5"
+
+move_to_workspace_1 = "CTRL+ALT+1"
+move_to_workspace_2 = "CTRL+ALT+2"
+move_to_workspace_3 = "CTRL+ALT+3"
+move_to_workspace_4 = "CTRL+ALT+4"
+move_to_workspace_5 = "CTRL+ALT+5"
+
+layout_left_half = "CTRL+ALT+SHIFT+Q"
+layout_right_half = "CTRL+ALT+SHIFT+W"
+layout_top_half = "CTRL+ALT+SHIFT+E"
+layout_bottom_half = "CTRL+ALT+SHIFT+R"
+
+quit = "CTRL+ALT+SHIFT+ESC"

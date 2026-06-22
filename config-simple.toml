@@ -1,0 +1,65 @@
+[layout]
+gap = 8
+margin = 0
+
+[terminal]
+command = "wt.exe"
+
+[ignore]
+classes = [
+    "Shell_TrayWnd",
+    "Progman",
+    "Windows.UI.Core.CoreWindow",
+    "ApplicationFrameWindow",
+]
+titles = [
+    "Program Manager",
+    "",
+]
+
+[hotkeys]
+move_left = "CTRL+ALT+H"
+move_down = "CTRL+ALT+J"
+move_up = "CTRL+ALT+K"
+move_right = "CTRL+ALT+L"
+
+focus_left = "CTRL+ALT+SHIFT+H"
+focus_down = "CTRL+ALT+SHIFT+J"
+focus_up = "CTRL+ALT+SHIFT+K"
+focus_right = "CTRL+ALT+SHIFT+L"
+
+fullscreen = "CTRL+ALT+F"
+center = "CTRL+ALT+SPACE"
+launch_terminal = "CTRL+ALT+ENTER"
+
+next_workspace = "CTRL+ALT+N"
+previous_workspace = "CTRL+ALT+P"
+
+workspace_1 = "CTRL+ALT+1"
+workspace_2 = "CTRL+ALT+2"
+workspace_3 = "CTRL+ALT+3"
+workspace_4 = "CTRL+ALT+4"
+workspace_5 = "CTRL+ALT+5"
+
+move_to_workspace_1 = "CTRL+ALT+SHIFT+1"
+move_to_workspace_2 = "CTRL+ALT+SHIFT+2"
+move_to_workspace_3 = "CTRL+ALT+SHIFT+3"
+move_to_workspace_4 = "CTRL+ALT+SHIFT+4"
+move_to_workspace_5 = "CTRL+ALT+SHIFT+5"
+
+layout_split_h = "CTRL+ALT+Z"
+layout_split_v = "CTRL+ALT+X"
+layout_monocle = "CTRL+ALT+M"
+layout_stacking = "CTRL+ALT+S"
+
+split_horizontal = "CTRL+ALT+SHIFT+Z"
+split_vertical = "CTRL+ALT+SHIFT+X"
+toggle_split = "CTRL+ALT+T"
+
+detect_window = "CTRL+ALT+D"
+
+quit = "CTRL+ALT+ESC"
+
+[[rules]]
+class = "CASCADIA*"
+workspace = 1
